@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<method type="MS" name="15_0_A8_1" version="3.4" creator="flexAnalysis">
+	<MethodParameter>
+		<DisplayParameter>
+			<MassPrecision>3</MassPrecision>
+			<ReplaceOriginalSpectrum>true</ReplaceOriginalSpectrum>
+		</DisplayParameter>
+		<PrpMethod>
+			<PrpMethodName>SC_Protein_low</PrpMethodName>
+			<PrpMethodXML>&lt;!--Bruker Daltonics  (BDAL) may occasionally provide you with updates 
+of this file format in a manner that seems to be appropriate to BDAL. 
+All such updates shall be deemed to be part of the BDAL software 
+for all purposes hereunder. 
+ In case you use BDAL - file formats in any other manner, 
+BDAL shall not be liable for any loss or damage caused. Furthermore you are not entitled to claim compatibility of updated 
+formats with older versions.--&gt;
+&lt;FilterContainer name=&quot;50db4885-1d73-473a-b7bf-4c587abec6de&quot; cid=&quot;&quot; version=&quot;1.0.46.31&quot;&gt;
+&lt;Content name=&quot;Baseline Subtraction&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;ConvexHullV3 cid=&quot;F3B82837-D5A5-4FFF-A8EF-03664FF74F00&quot;&gt;
+			&lt;Parameter cid=&quot;13C3FEBB-A225-4352-A563-777159178858&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/ConvexHullV3&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.1&lt;/Flatness&gt;
+				&lt;MedianLevel type=&quot;Double&quot;&gt;0.5&lt;/MedianLevel&gt;
+			&lt;/Parameter&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Baseline Subtraction MLE Apex&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;ConvexHullV3 cid=&quot;F3B82837-D5A5-4FFF-A8EF-03664FF74F00&quot;&gt;
+			&lt;Parameter cid=&quot;13C3FEBB-A225-4352-A563-777159178858&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/ConvexHullV3&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+				&lt;MedianLevel type=&quot;Double&quot;&gt;0.5&lt;/MedianLevel&gt;
+			&lt;/Parameter&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Baseline Subtraction MLE Centroid&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;ConvexHullV3 cid=&quot;F3B82837-D5A5-4FFF-A8EF-03664FF74F00&quot;&gt;
+			&lt;Parameter cid=&quot;13C3FEBB-A225-4352-A563-777159178858&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/ConvexHullV3&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+				&lt;MedianLevel type=&quot;Double&quot;&gt;0.5&lt;/MedianLevel&gt;
+			&lt;/Parameter&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Baseline Subtraction MLE CorrEnh&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;ConvexHullV3 cid=&quot;F3B82837-D5A5-4FFF-A8EF-03664FF74F00&quot;&gt;
+			&lt;Parameter cid=&quot;13C3FEBB-A225-4352-A563-777159178858&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/ConvexHullV3&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+				&lt;MedianLevel type=&quot;Double&quot;&gt;0.5&lt;/MedianLevel&gt;
+			&lt;/Parameter&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Baseline Subtraction MLE Snap&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+				&lt;MedianLevel type=&quot;Double&quot;&gt;0.5&lt;/MedianLevel&gt;
+			&lt;/Parameter&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Baseline Subtraction MLE Snap2&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;/&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Baseline Subtraction MLE Sum&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;ConvexHullV3 cid=&quot;F3B82837-D5A5-4FFF-A8EF-03664FF74F00&quot;&gt;
+			&lt;Parameter cid=&quot;13C3FEBB-A225-4352-A563-777159178858&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/ConvexHullV3&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+				&lt;MedianLevel type=&quot;Double&quot;&gt;0.5&lt;/MedianLevel&gt;
+			&lt;/Parameter&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Baseline Subtraction MLE XMass&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;ConvexHullV3 cid=&quot;F3B82837-D5A5-4FFF-A8EF-03664FF74F00&quot;&gt;
+			&lt;Parameter cid=&quot;13C3FEBB-A225-4352-A563-777159178858&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/ConvexHullV3&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+				&lt;MedianLevel type=&quot;Double&quot;&gt;0.5&lt;/MedianLevel&gt;
+			&lt;/Parameter&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Baseline Subtraction MLF Apex&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;ConvexHullV3 cid=&quot;F3B82837-D5A5-4FFF-A8EF-03664FF74F00&quot;&gt;
+			&lt;Parameter cid=&quot;13C3FEBB-A225-4352-A563-777159178858&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/ConvexHullV3&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+				&lt;MedianLevel type=&quot;Double&quot;&gt;0.5&lt;/MedianLevel&gt;
+			&lt;/Parameter&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Baseline Subtraction MLF Centroid&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;ConvexHullV3 cid=&quot;F3B82837-D5A5-4FFF-A8EF-03664FF74F00&quot;&gt;
+			&lt;Parameter cid=&quot;13C3FEBB-A225-4352-A563-777159178858&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/ConvexHullV3&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.1&lt;/Flatness&gt;
+				&lt;MedianLevel type=&quot;Double&quot;&gt;0.5&lt;/MedianLevel&gt;
+			&lt;/Parameter&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Baseline Subtraction MLF CorrEnh&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;ConvexHullV3 cid=&quot;F3B82837-D5A5-4FFF-A8EF-03664FF74F00&quot;&gt;
+			&lt;Parameter cid=&quot;13C3FEBB-A225-4352-A563-777159178858&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/ConvexHullV3&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+				&lt;MedianLevel type=&quot;Double&quot;&gt;0.5&lt;/MedianLevel&gt;
+			&lt;/Parameter&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Baseline Subtraction MLF Snap&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+				&lt;MedianLevel type=&quot;Double&quot;&gt;0.5&lt;/MedianLevel&gt;
+			&lt;/Parameter&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Baseline Subtraction MLF Snap2&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;/&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Baseline Subtraction MLF Sum&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;ConvexHullV3 cid=&quot;F3B82837-D5A5-4FFF-A8EF-03664FF74F00&quot;&gt;
+			&lt;Parameter cid=&quot;13C3FEBB-A225-4352-A563-777159178858&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/ConvexHullV3&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+				&lt;MedianLevel type=&quot;Double&quot;&gt;0.5&lt;/MedianLevel&gt;
+			&lt;/Parameter&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Baseline Subtraction MLF XMass&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;TopHat&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;ConvexHullV3 cid=&quot;F3B82837-D5A5-4FFF-A8EF-03664FF74F00&quot;&gt;
+			&lt;Parameter cid=&quot;13C3FEBB-A225-4352-A563-777159178858&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/ConvexHullV3&gt;
+		&lt;Median cid=&quot;BDA96754-CB89-9622-3EFA-2CCB77000000&quot;&gt;
+			&lt;Parameter cid=&quot;F139916F-6195-BC94-7DE0-494AA2000000&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+				&lt;MedianLevel type=&quot;Double&quot;&gt;0.5&lt;/MedianLevel&gt;
+			&lt;/Parameter&gt;
+		&lt;/Median&gt;
+		&lt;TopHat cid=&quot;1A775981-5562-48C9-9737-BB172208B986&quot;&gt;
+			&lt;Parameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;&gt;
+				&lt;Flatness type=&quot;Double&quot;&gt;0.8&lt;/Flatness&gt;
+			&lt;/Parameter&gt;
+		&lt;/TopHat&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;MLE Combo&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;MLF_Reference&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;MLE_Reference cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+			&lt;Active&gt;Centroid&lt;/Active&gt;
+			&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+				&lt;Centroid cid=&quot;D24AB3CC-87C8-87B3-E356-FF2391000000&quot;&gt;
+					&lt;Parameter cid=&quot;397A3096-E32F-4731-99BB-4FC5C0FEE270&quot;&gt;
+						&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+						&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+						&lt;MaxPeakCount type=&quot;Int32&quot;&gt;1&lt;/MaxPeakCount&gt;
+						&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+						&lt;PeakFinderAlgorithm type=&quot;String&quot;&gt;Centroid&lt;/PeakFinderAlgorithm&gt;
+						&lt;PeakWidth type=&quot;Double&quot;&gt;0.2&lt;/PeakWidth&gt;
+						&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;0&lt;/RelativeThresholdBasePeak&gt;
+						&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;0&lt;/SignalToNoiseThreshold&gt;
+					&lt;/Parameter&gt;
+				&lt;/Centroid&gt;
+				&lt;Snap cid=&quot;59943089-028D-8173-B87F-1043DA000000&quot;&gt;
+					&lt;Parameter cid=&quot;001056FE-1DC1-A063-97AA-AE498C000000&quot;&gt;
+						&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+						&lt;BuildingBlockFile type=&quot;String&quot;&gt;Averagine&lt;/BuildingBlockFile&gt;
+						&lt;BuildingBlockStrings cid=&quot;CE039962-A7A6-456B-8E0F-C36DF3F1CC94&quot;&gt;
+							&lt;Item&gt;C 4.9384 N 1.3577 O 1.4773 S 0.0417 H 7.7583&lt;/Item&gt;
+						&lt;/BuildingBlockStrings&gt;
+						&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+						&lt;GoodnessThreshold type=&quot;Double&quot;&gt;0&lt;/GoodnessThreshold&gt;
+						&lt;ICATPartnerThreshSN type=&quot;Double&quot;&gt;2.5&lt;/ICATPartnerThreshSN&gt;
+						&lt;MaxPeakCount type=&quot;Int32&quot;&gt;1&lt;/MaxPeakCount&gt;
+						&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+						&lt;PeakWidth type=&quot;Double&quot;&gt;0.75&lt;/PeakWidth&gt;
+						&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;0&lt;/RelativeThresholdBasePeak&gt;
+						&lt;RemoveFragments type=&quot;Bool&quot;&gt;false&lt;/RemoveFragments&gt;
+						&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;0&lt;/SignalToNoiseThreshold&gt;
+						&lt;UseICAT type=&quot;Bool&quot;&gt;false&lt;/UseICAT&gt;
+						&lt;WidthFragments type=&quot;Double&quot;&gt;0.75&lt;/WidthFragments&gt;
+					&lt;/Parameter&gt;
+				&lt;/Snap&gt;
+				&lt;Snap2 cid=&quot;76687E4F-A8E7-4E3B-BDE6-9544C5E19409&quot;&gt;
+					&lt;Parameter cid=&quot;ED124896-B664-4363-82B9-98FEDA76D02F&quot;&gt;
+						&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+						&lt;BuildingBlockFile type=&quot;String&quot;&gt;Averagine&lt;/BuildingBlockFile&gt;
+						&lt;BuildingBlockStrings cid=&quot;CE039962-A7A6-456B-8E0F-C36DF3F1CC94&quot;&gt;
+							&lt;Item&gt;C 4.9384 N 1.3577 O 1.4773 S 0.0417 H 7.7583&lt;/Item&gt;
+						&lt;/BuildingBlockStrings&gt;
+						&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+						&lt;GoodnessThreshold type=&quot;Double&quot;&gt;0&lt;/GoodnessThreshold&gt;
+						&lt;MaxPeakCount type=&quot;Int32&quot;&gt;100&lt;/MaxPeakCount&gt;
+						&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+						&lt;PeakWidth type=&quot;Double&quot;&gt;0.75&lt;/PeakWidth&gt;
+						&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;0&lt;/RelativeThresholdBasePeak&gt;
+						&lt;RemoveFragments type=&quot;Bool&quot;&gt;false&lt;/RemoveFragments&gt;
+						&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;2&lt;/SignalToNoiseThreshold&gt;
+						&lt;WidthFragments type=&quot;Double&quot;&gt;0.75&lt;/WidthFragments&gt;
+					&lt;/Parameter&gt;
+				&lt;/Snap2&gt;
+				&lt;Sum cid=&quot;5EBB93EE-C042-B744-DF0E-327F36000000&quot;&gt;
+					&lt;Parameter cid=&quot;DBD7DBA7-3AAD-978D-E411-F31D78000000&quot;&gt;
+						&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+						&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+						&lt;MaxPeakCount type=&quot;Int32&quot;&gt;1&lt;/MaxPeakCount&gt;
+						&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+						&lt;PeakWidth type=&quot;Double&quot;&gt;0.2&lt;/PeakWidth&gt;
+						&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;0&lt;/RelativeThresholdBasePeak&gt;
+						&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;0&lt;/SignalToNoiseThreshold&gt;
+					&lt;/Parameter&gt;
+				&lt;/Sum&gt;
+			&lt;/Filter&gt;
+		&lt;/MLE_Reference&gt;
+		&lt;MLF_Reference cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+			&lt;Active&gt;Centroid&lt;/Active&gt;
+			&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+				&lt;Centroid cid=&quot;D24AB3CC-87C8-87B3-E356-FF2391000000&quot;&gt;
+					&lt;Parameter cid=&quot;397A3096-E32F-4731-99BB-4FC5C0FEE270&quot;&gt;
+						&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+						&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+						&lt;MaxPeakCount type=&quot;Int32&quot;&gt;100&lt;/MaxPeakCount&gt;
+						&lt;MinIntensity type=&quot;Double&quot;&gt;0&lt;/MinIntensity&gt;
+						&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+						&lt;PeakFinderAlgorithm type=&quot;String&quot;&gt;Centroid&lt;/PeakFinderAlgorithm&gt;
+						&lt;PeakWidth type=&quot;Double&quot;&gt;5&lt;/PeakWidth&gt;
+						&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;0&lt;/RelativeThresholdBasePeak&gt;
+						&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;3&lt;/SignalToNoiseThreshold&gt;
+						&lt;UseMaxSensivityForPeakPicking type=&quot;Bool&quot;&gt;true&lt;/UseMaxSensivityForPeakPicking&gt;
+					&lt;/Parameter&gt;
+				&lt;/Centroid&gt;
+				&lt;Snap cid=&quot;59943089-028D-8173-B87F-1043DA000000&quot;&gt;
+					&lt;Parameter cid=&quot;001056FE-1DC1-A063-97AA-AE498C000000&quot;&gt;
+						&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+						&lt;BuildingBlockFile type=&quot;String&quot;&gt;Averagine&lt;/BuildingBlockFile&gt;
+						&lt;BuildingBlockStrings cid=&quot;CE039962-A7A6-456B-8E0F-C36DF3F1CC94&quot;&gt;
+							&lt;Item&gt;C 4.9384 N 1.3577 O 1.4773 S 0.0417 H 7.7583&lt;/Item&gt;
+						&lt;/BuildingBlockStrings&gt;
+						&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+						&lt;GoodnessThreshold type=&quot;Double&quot;&gt;50&lt;/GoodnessThreshold&gt;
+						&lt;ICATPartnerThreshSN type=&quot;Double&quot;&gt;2.5&lt;/ICATPartnerThreshSN&gt;
+						&lt;MaxPeakCount type=&quot;Int32&quot;&gt;100&lt;/MaxPeakCount&gt;
+						&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+						&lt;PeakWidth type=&quot;Double&quot;&gt;0.75&lt;/PeakWidth&gt;
+						&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;3&lt;/RelativeThresholdBasePeak&gt;
+						&lt;RemoveFragments type=&quot;Bool&quot;&gt;false&lt;/RemoveFragments&gt;
+						&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;3&lt;/SignalToNoiseThreshold&gt;
+						&lt;UseICAT type=&quot;Bool&quot;&gt;false&lt;/UseICAT&gt;
+						&lt;UseMaxSensivityForPeakPicking type=&quot;Bool&quot;&gt;true&lt;/UseMaxSensivityForPeakPicking&gt;
+						&lt;WidthFragments type=&quot;Double&quot;&gt;0.75&lt;/WidthFragments&gt;
+					&lt;/Parameter&gt;
+				&lt;/Snap&gt;
+				&lt;Snap2 cid=&quot;76687E4F-A8E7-4E3B-BDE6-9544C5E19409&quot;&gt;
+					&lt;Parameter cid=&quot;ED124896-B664-4363-82B9-98FEDA76D02F&quot;&gt;
+						&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+						&lt;BuildingBlockFile type=&quot;String&quot;&gt;Averagine&lt;/BuildingBlockFile&gt;
+						&lt;BuildingBlockStrings cid=&quot;CE039962-A7A6-456B-8E0F-C36DF3F1CC94&quot;&gt;
+							&lt;Item&gt;C 4.9384 N 1.3577 O 1.4773 S 0.0417 H 7.7583&lt;/Item&gt;
+						&lt;/BuildingBlockStrings&gt;
+						&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+						&lt;GoodnessThreshold type=&quot;Double&quot;&gt;0&lt;/GoodnessThreshold&gt;
+						&lt;MaxPeakCount type=&quot;Int32&quot;&gt;100&lt;/MaxPeakCount&gt;
+						&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+						&lt;PeakWidth type=&quot;Double&quot;&gt;0.75&lt;/PeakWidth&gt;
+						&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;0&lt;/RelativeThresholdBasePeak&gt;
+						&lt;RemoveFragments type=&quot;Bool&quot;&gt;false&lt;/RemoveFragments&gt;
+						&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;2&lt;/SignalToNoiseThreshold&gt;
+						&lt;UseMaxSensivityForPeakPicking type=&quot;Bool&quot;&gt;true&lt;/UseMaxSensivityForPeakPicking&gt;
+						&lt;WidthFragments type=&quot;Double&quot;&gt;0.75&lt;/WidthFragments&gt;
+					&lt;/Parameter&gt;
+				&lt;/Snap2&gt;
+				&lt;Sum cid=&quot;5EBB93EE-C042-B744-DF0E-327F36000000&quot;&gt;
+					&lt;Parameter cid=&quot;DBD7DBA7-3AAD-978D-E411-F31D78000000&quot;&gt;
+						&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+						&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+						&lt;MaxPeakCount type=&quot;Int32&quot;&gt;100&lt;/MaxPeakCount&gt;
+						&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+						&lt;PeakWidth type=&quot;Double&quot;&gt;0.2&lt;/PeakWidth&gt;
+						&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;0&lt;/RelativeThresholdBasePeak&gt;
+						&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;3&lt;/SignalToNoiseThreshold&gt;
+						&lt;UseMaxSensivityForPeakPicking type=&quot;Bool&quot;&gt;true&lt;/UseMaxSensivityForPeakPicking&gt;
+					&lt;/Parameter&gt;
+				&lt;/Sum&gt;
+			&lt;/Filter&gt;
+		&lt;/MLF_Reference&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Mass List Edit&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;Centroid&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;Centroid cid=&quot;D24AB3CC-87C8-87B3-E356-FF2391000000&quot;&gt;
+			&lt;Parameter cid=&quot;397A3096-E32F-4731-99BB-4FC5C0FEE270&quot;&gt;
+				&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+				&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+				&lt;MaxPeakCount type=&quot;Int32&quot;&gt;1&lt;/MaxPeakCount&gt;
+				&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+				&lt;PeakFinderAlgorithm type=&quot;String&quot;&gt;Centroid&lt;/PeakFinderAlgorithm&gt;
+				&lt;PeakWidth type=&quot;Double&quot;&gt;0.2&lt;/PeakWidth&gt;
+				&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;0&lt;/RelativeThresholdBasePeak&gt;
+				&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;0&lt;/SignalToNoiseThreshold&gt;
+			&lt;/Parameter&gt;
+		&lt;/Centroid&gt;
+		&lt;Snap cid=&quot;59943089-028D-8173-B87F-1043DA000000&quot;&gt;
+			&lt;Parameter cid=&quot;001056FE-1DC1-A063-97AA-AE498C000000&quot;&gt;
+				&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+				&lt;BuildingBlockFile type=&quot;String&quot;&gt;Averagine&lt;/BuildingBlockFile&gt;
+				&lt;BuildingBlockStrings cid=&quot;CE039962-A7A6-456B-8E0F-C36DF3F1CC94&quot;&gt;
+					&lt;Item&gt;C 4.9384 N 1.3577 O 1.4773 S 0.0417 H 7.7583&lt;/Item&gt;
+				&lt;/BuildingBlockStrings&gt;
+				&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+				&lt;GoodnessThreshold type=&quot;Double&quot;&gt;0&lt;/GoodnessThreshold&gt;
+				&lt;ICATPartnerThreshSN type=&quot;Double&quot;&gt;2.5&lt;/ICATPartnerThreshSN&gt;
+				&lt;MaxPeakCount type=&quot;Int32&quot;&gt;1&lt;/MaxPeakCount&gt;
+				&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+				&lt;PeakWidth type=&quot;Double&quot;&gt;0.75&lt;/PeakWidth&gt;
+				&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;0&lt;/RelativeThresholdBasePeak&gt;
+				&lt;RemoveFragments type=&quot;Bool&quot;&gt;false&lt;/RemoveFragments&gt;
+				&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;0&lt;/SignalToNoiseThreshold&gt;
+				&lt;UseICAT type=&quot;Bool&quot;&gt;false&lt;/UseICAT&gt;
+				&lt;WidthFragments type=&quot;Double&quot;&gt;0.75&lt;/WidthFragments&gt;
+			&lt;/Parameter&gt;
+		&lt;/Snap&gt;
+		&lt;Snap2 cid=&quot;76687E4F-A8E7-4E3B-BDE6-9544C5E19409&quot;&gt;
+			&lt;Parameter cid=&quot;ED124896-B664-4363-82B9-98FEDA76D02F&quot;&gt;
+				&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+				&lt;BuildingBlockFile type=&quot;String&quot;&gt;Averagine&lt;/BuildingBlockFile&gt;
+				&lt;BuildingBlockStrings cid=&quot;CE039962-A7A6-456B-8E0F-C36DF3F1CC94&quot;&gt;
+					&lt;Item&gt;C 4.9384 N 1.3577 O 1.4773 S 0.0417 H 7.7583&lt;/Item&gt;
+				&lt;/BuildingBlockStrings&gt;
+				&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+				&lt;GoodnessThreshold type=&quot;Double&quot;&gt;0&lt;/GoodnessThreshold&gt;
+				&lt;MaxPeakCount type=&quot;Int32&quot;&gt;100&lt;/MaxPeakCount&gt;
+				&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+				&lt;PeakWidth type=&quot;Double&quot;&gt;0.75&lt;/PeakWidth&gt;
+				&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;0&lt;/RelativeThresholdBasePeak&gt;
+				&lt;RemoveFragments type=&quot;Bool&quot;&gt;false&lt;/RemoveFragments&gt;
+				&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;2&lt;/SignalToNoiseThreshold&gt;
+				&lt;WidthFragments type=&quot;Double&quot;&gt;0.75&lt;/WidthFragments&gt;
+			&lt;/Parameter&gt;
+		&lt;/Snap2&gt;
+		&lt;Sum cid=&quot;5EBB93EE-C042-B744-DF0E-327F36000000&quot;&gt;
+			&lt;Parameter cid=&quot;DBD7DBA7-3AAD-978D-E411-F31D78000000&quot;&gt;
+				&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+				&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+				&lt;MaxPeakCount type=&quot;Int32&quot;&gt;1&lt;/MaxPeakCount&gt;
+				&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+				&lt;PeakWidth type=&quot;Double&quot;&gt;0.2&lt;/PeakWidth&gt;
+				&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;0&lt;/RelativeThresholdBasePeak&gt;
+				&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;0&lt;/SignalToNoiseThreshold&gt;
+			&lt;/Parameter&gt;
+		&lt;/Sum&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Mass List Find&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;Centroid&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;Centroid cid=&quot;D24AB3CC-87C8-87B3-E356-FF2391000000&quot;&gt;
+			&lt;Parameter cid=&quot;397A3096-E32F-4731-99BB-4FC5C0FEE270&quot;&gt;
+				&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+				&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+				&lt;MaxPeakCount type=&quot;Int32&quot;&gt;100&lt;/MaxPeakCount&gt;
+				&lt;MinIntensity type=&quot;Double&quot;&gt;0&lt;/MinIntensity&gt;
+				&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+				&lt;PeakFinderAlgorithm type=&quot;String&quot;&gt;Centroid&lt;/PeakFinderAlgorithm&gt;
+				&lt;PeakWidth type=&quot;Double&quot;&gt;5&lt;/PeakWidth&gt;
+				&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;0&lt;/RelativeThresholdBasePeak&gt;
+				&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;3&lt;/SignalToNoiseThreshold&gt;
+				&lt;UseMaxSensivityForPeakPicking type=&quot;Bool&quot;&gt;true&lt;/UseMaxSensivityForPeakPicking&gt;
+			&lt;/Parameter&gt;
+		&lt;/Centroid&gt;
+		&lt;Snap cid=&quot;59943089-028D-8173-B87F-1043DA000000&quot;&gt;
+			&lt;Parameter cid=&quot;001056FE-1DC1-A063-97AA-AE498C000000&quot;&gt;
+				&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+				&lt;BuildingBlockFile type=&quot;String&quot;&gt;Averagine&lt;/BuildingBlockFile&gt;
+				&lt;BuildingBlockStrings cid=&quot;CE039962-A7A6-456B-8E0F-C36DF3F1CC94&quot;&gt;
+					&lt;Item&gt;C 4.9384 N 1.3577 O 1.4773 S 0.0417 H 7.7583&lt;/Item&gt;
+				&lt;/BuildingBlockStrings&gt;
+				&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+				&lt;GoodnessThreshold type=&quot;Double&quot;&gt;50&lt;/GoodnessThreshold&gt;
+				&lt;ICATPartnerThreshSN type=&quot;Double&quot;&gt;2.5&lt;/ICATPartnerThreshSN&gt;
+				&lt;MaxPeakCount type=&quot;Int32&quot;&gt;100&lt;/MaxPeakCount&gt;
+				&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+				&lt;PeakWidth type=&quot;Double&quot;&gt;0.75&lt;/PeakWidth&gt;
+				&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;3&lt;/RelativeThresholdBasePeak&gt;
+				&lt;RemoveFragments type=&quot;Bool&quot;&gt;false&lt;/RemoveFragments&gt;
+				&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;3&lt;/SignalToNoiseThreshold&gt;
+				&lt;UseICAT type=&quot;Bool&quot;&gt;false&lt;/UseICAT&gt;
+				&lt;UseMaxSensivityForPeakPicking type=&quot;Bool&quot;&gt;true&lt;/UseMaxSensivityForPeakPicking&gt;
+				&lt;WidthFragments type=&quot;Double&quot;&gt;0.75&lt;/WidthFragments&gt;
+			&lt;/Parameter&gt;
+		&lt;/Snap&gt;
+		&lt;Snap2 cid=&quot;76687E4F-A8E7-4E3B-BDE6-9544C5E19409&quot;&gt;
+			&lt;Parameter cid=&quot;ED124896-B664-4363-82B9-98FEDA76D02F&quot;&gt;
+				&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+				&lt;BuildingBlockFile type=&quot;String&quot;&gt;Averagine&lt;/BuildingBlockFile&gt;
+				&lt;BuildingBlockStrings cid=&quot;CE039962-A7A6-456B-8E0F-C36DF3F1CC94&quot;&gt;
+					&lt;Item&gt;C 4.9384 N 1.3577 O 1.4773 S 0.0417 H 7.7583&lt;/Item&gt;
+				&lt;/BuildingBlockStrings&gt;
+				&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+				&lt;GoodnessThreshold type=&quot;Double&quot;&gt;0&lt;/GoodnessThreshold&gt;
+				&lt;MaxPeakCount type=&quot;Int32&quot;&gt;100&lt;/MaxPeakCount&gt;
+				&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+				&lt;PeakWidth type=&quot;Double&quot;&gt;0.75&lt;/PeakWidth&gt;
+				&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;0&lt;/RelativeThresholdBasePeak&gt;
+				&lt;RemoveFragments type=&quot;Bool&quot;&gt;false&lt;/RemoveFragments&gt;
+				&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;2&lt;/SignalToNoiseThreshold&gt;
+				&lt;UseMaxSensivityForPeakPicking type=&quot;Bool&quot;&gt;true&lt;/UseMaxSensivityForPeakPicking&gt;
+				&lt;WidthFragments type=&quot;Double&quot;&gt;0.75&lt;/WidthFragments&gt;
+			&lt;/Parameter&gt;
+		&lt;/Snap2&gt;
+		&lt;Sum cid=&quot;5EBB93EE-C042-B744-DF0E-327F36000000&quot;&gt;
+			&lt;Parameter cid=&quot;DBD7DBA7-3AAD-978D-E411-F31D78000000&quot;&gt;
+				&lt;BaselineParameter cid=&quot;6A073A1C-AD71-431C-A588-79E7200B4D3F&quot;/&gt;
+				&lt;CentroidPercent type=&quot;Double&quot;&gt;80&lt;/CentroidPercent&gt;
+				&lt;MaxPeakCount type=&quot;Int32&quot;&gt;100&lt;/MaxPeakCount&gt;
+				&lt;MinimumIntensity type=&quot;Double&quot;&gt;0&lt;/MinimumIntensity&gt;
+				&lt;PeakWidth type=&quot;Double&quot;&gt;0.2&lt;/PeakWidth&gt;
+				&lt;RelativeThresholdBasePeak type=&quot;Double&quot;&gt;0&lt;/RelativeThresholdBasePeak&gt;
+				&lt;SignalToNoiseThreshold type=&quot;Double&quot;&gt;3&lt;/SignalToNoiseThreshold&gt;
+				&lt;UseMaxSensivityForPeakPicking type=&quot;Bool&quot;&gt;true&lt;/UseMaxSensivityForPeakPicking&gt;
+			&lt;/Parameter&gt;
+		&lt;/Sum&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;SmoothSelection A&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active/&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;ChemicalNoiseV2 cid=&quot;0AA9C970-E0D3-BE7F-672D-102105000000&quot;&gt;
+			&lt;Parameter cid=&quot;6AC46B3D-C93B-B3EB-2856-E19F25000000&quot;/&gt;
+		&lt;/ChemicalNoiseV2&gt;
+		&lt;ChemicalNoiseV3 cid=&quot;C2EE7E16-B73E-BD2F-1B51-FE1BD4000000&quot;&gt;
+			&lt;Parameter cid=&quot;ED4CFCB5-9380-9FC8-BA7E-01A7D1000000&quot;/&gt;
+		&lt;/ChemicalNoiseV3&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;Content name=&quot;Smoothing&quot;&gt;
+&lt;ComboFilter cid=&quot;A72B0A1D-B2E1-4E8C-909B-0F280753FCF0&quot;&gt;
+	&lt;Active&gt;SavitzkyGolay&lt;/Active&gt;
+	&lt;Filter cid=&quot;DD2457C9-2B2F-4B9E-A115-4EE0E1593C7D&quot;&gt;
+		&lt;ChemicalNoise cid=&quot;0AA9C970-E0D3-BE7F-672D-102105000000&quot;&gt;
+			&lt;Parameter cid=&quot;6AC46B3D-C93B-B3EB-2856-E19F25000000&quot;&gt;
+				&lt;Cycles type=&quot;UInt32&quot;&gt;1&lt;/Cycles&gt;
+				&lt;Width type=&quot;Double&quot;&gt;0.2&lt;/Width&gt;
+			&lt;/Parameter&gt;
+		&lt;/ChemicalNoise&gt;
+		&lt;Gauss cid=&quot;C8C23A9D-EA45-AC38-5D2C-5BF71D000000&quot;&gt;
+			&lt;Parameter cid=&quot;692B76C2-254A-928F-9E40-7F9E1A000000&quot;&gt;
+				&lt;Cycles type=&quot;UInt32&quot;&gt;1&lt;/Cycles&gt;
+				&lt;Width type=&quot;Double&quot;&gt;0.2&lt;/Width&gt;
+			&lt;/Parameter&gt;
+		&lt;/Gauss&gt;
+		&lt;SavitzkyGolay cid=&quot;1954921C-4193-87CB-1F9C-CD5219000000&quot;&gt;
+			&lt;Parameter cid=&quot;4D95F395-2FAE-8F3F-3C94-8B9171000000&quot;&gt;
+				&lt;Cycles type=&quot;UInt32&quot;&gt;1&lt;/Cycles&gt;
+				&lt;Width type=&quot;Double&quot;&gt;5&lt;/Width&gt;
+			&lt;/Parameter&gt;
+		&lt;/SavitzkyGolay&gt;
+	&lt;/Filter&gt;
+&lt;/ComboFilter&gt;
+
+
+&lt;/Content&gt;
+&lt;/FilterContainer&gt;
+</PrpMethodXML>
+		</PrpMethod>
+		<MassListLayoutParameter>
+			<LayoutParameter>
+				<ColumnLayout ColumnID="7" ColumnWidth="80"/>
+				<ColumnLayout2 ColumnID="mass" ColumnShortDesc="m/z" ColumnLongDesc="m/z" ColumnWidth="80"/>
+				<ColumnLayout ColumnID="10" ColumnWidth="80"/>
+				<ColumnLayout2 ColumnID="s2n" ColumnShortDesc="S/N" ColumnLongDesc="Signal to Noise" ColumnWidth="80"/>
+				<ColumnLayout ColumnID="5" ColumnWidth="80"/>
+				<ColumnLayout2 ColumnID="goodn" ColumnShortDesc="Quality Fac." ColumnLongDesc="Quality Factor" ColumnWidth="80"/>
+				<ColumnLayout ColumnID="9" ColumnWidth="80"/>
+				<ColumnLayout2 ColumnID="reso" ColumnShortDesc="Res." ColumnLongDesc="Resolution" ColumnWidth="80"/>
+				<ColumnLayout ColumnID="1" ColumnWidth="80"/>
+				<ColumnLayout2 ColumnID="absi" ColumnShortDesc="Intens." ColumnLongDesc="Intensity" ColumnWidth="80"/>
+				<ColumnLayout ColumnID="2" ColumnWidth="80"/>
+				<ColumnLayout2 ColumnID="area" ColumnShortDesc="Area" ColumnLongDesc="Area" ColumnWidth="80"/>
+			</LayoutParameter>
+		</MassListLayoutParameter>
+		<SmartFormulaResultListLayoutParameter>
+			<LayoutParameter>
+				<ColumnLayout ColumnID="9" ColumnWidth="200"/>
+				<ColumnLayout2 ColumnID="formula" ColumnShortDesc="Formula" ColumnLongDesc="Sum Formula" ColumnWidth="200"/>
+				<ColumnLayout ColumnID="10" ColumnWidth="80"/>
+				<ColumnLayout2 ColumnID="mass" ColumnShortDesc="m/z" ColumnLongDesc="m/z" ColumnWidth="80"/>
+				<ColumnLayout ColumnID="5" ColumnWidth="80"/>
+				<ColumnLayout2 ColumnID="err" ColumnShortDesc="err [ppm]" ColumnLongDesc="Error [ppm]" ColumnWidth="80"/>
+				<ColumnLayout ColumnID="19" ColumnWidth="80"/>
+				<ColumnLayout2 ColumnID="sigmaIntensity" ColumnShortDesc="mSigma" ColumnLongDesc="mSigma" ColumnWidth="80"/>
+				<ColumnLayout ColumnID="4" ColumnWidth="80"/>
+				<ColumnLayout2 ColumnID="dbe" ColumnShortDesc="rdb" ColumnLongDesc="Rings and Double Bonds" ColumnWidth="80"/>
+				<ColumnLayout ColumnID="1" ColumnWidth="80"/>
+				<ColumnLayout2 ColumnID="NRule" ColumnShortDesc="N-Rule" ColumnLongDesc="Nitrogen Rule" ColumnWidth="80"/>
+				<ColumnLayout ColumnID="8" ColumnWidth="80"/>
+				<ColumnLayout2 ColumnID="even" ColumnShortDesc="e¯Conf" ColumnLongDesc="Electron Configuration" ColumnWidth="80"/>
+			</LayoutParameter>
+		</SmartFormulaResultListLayoutParameter>
+		<MSRecalibrationParameter>
+			<CalibrationStrategy>1</CalibrationStrategy>
+			<PeakAssignmentToleranceSourceManual>2</PeakAssignmentToleranceSourceManual>
+			<PeakAssignmentToleranceSourceStatisticalPeptide>2</PeakAssignmentToleranceSourceStatisticalPeptide>
+			<SelectedMassControlListNameManual>Protein1CalibStandard</SelectedMassControlListNameManual>
+			<SelectedMassControlListNameSmart/>
+			<CalibrationMode>CalibModeTof2CubicC1Enh</CalibrationMode>
+			<PeakAssignmentToleranceUserDefinedPPM>500</PeakAssignmentToleranceUserDefinedPPM>
+			<PeakAssignmentToleranceUserDefinedStatisticalPPM>500</PeakAssignmentToleranceUserDefinedStatisticalPPM>
+			<ZoomRange>0</ZoomRange>
+			<ZoomRangeUnitPercent>true</ZoomRangeUnitPercent>
+		</MSRecalibrationParameter>
+	</MethodParameter>
+	<script language="SaxBasic">
+		<![CDATA[Sub Main
+
+End Sub
+]]>
+	</script>
+</method>
+
